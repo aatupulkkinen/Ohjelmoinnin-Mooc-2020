@@ -5,6 +5,14 @@ public class Jatketaanko {
 
     public static void main(String[] args) {
         Scanner lukija = new Scanner(System.in);
+        
+        while(true){
+            System.out.println("Jatketaanko?");
+            String input = lukija.nextLine();
 
+            if(input.equals("ei")){
+                break;
+            }
+        }
     }
 }

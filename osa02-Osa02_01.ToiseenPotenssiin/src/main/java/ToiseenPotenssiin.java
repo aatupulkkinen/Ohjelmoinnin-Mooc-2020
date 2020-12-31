@@ -6,5 +6,7 @@ public class ToiseenPotenssiin {
     public static void main(String[] args) {
         Scanner lukija = new Scanner(System.in);
 
+        int num = Integer.valueOf(lukija.nextLine());
+        System.out.println(num*num);
     }
 }

@@ -6,5 +6,20 @@ public class SyotteidenRajaus {
     public static void main(String[] args) {
         Scanner lukija = new Scanner(System.in);
 
+        while(true){
+            System.out.println("Syötä luku");
+
+            int num = Integer.valueOf(lukija.nextLine());
+
+            if (num > 0){
+                System.out.println(num * num);
+                continue;
+            } else if (num < 0){
+                System.out.println("Epäkelpo luku");
+                continue;
+            } else {
+                break;
+            }
+        }
     }
 }
