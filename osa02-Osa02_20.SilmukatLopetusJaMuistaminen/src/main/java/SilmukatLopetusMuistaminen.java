@@ -4,13 +4,36 @@ import java.util.Scanner;
 public class SilmukatLopetusMuistaminen {
 
     public static void main(String[] args) {
-        // Kyseessä on yksi iso tehtävä jota koko ajan laajennetaan -- tehtävä
-        // on viiden yksittäisen tehtäväpisteen arvoinen
 
-        // Voit halutessasi lähettää osittain tehdyn tehtäväsarjan tarkastettavaksi palvelimelle
-        // palvelin valittaa tällöin niistä testeistä joita vastaava koodi ei ole vielä
-        // kirjoitettu. Jo tehdyt osat kuitenkin kirjautuvat tehdyiksi.
         Scanner lukija = new Scanner(System.in);
 
+        int sum = 0;
+        int nums = 0;
+        int even = 0;
+        int odd = 0;
+        while (true){
+            System.out.println("Syötä luvut: ");
+            int num = Integer.valueOf(lukija.nextLine());
+
+            if (num == -1){
+                break;
+            } else {
+                sum += num;
+                nums++;
+                if (num % 2 == 0){
+                    even++;
+                } else if (num % 2 != 0){
+                    odd++;
+                }
+                continue;
+            }
+
+        }
+        System.out.println("Kiitos ja näkemiin!");
+        System.out.println("Summa: "+sum);
+        System.out.println("Lukuja: "+nums);
+        System.out.println("Keskiarvo: "+((sum*1.0)/nums));
+        System.out.println("Parillisia: "+even);
+        System.out.println("Parittomia: "+odd);
     }
 }

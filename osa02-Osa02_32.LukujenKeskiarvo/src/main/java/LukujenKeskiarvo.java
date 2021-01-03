@@ -4,11 +4,13 @@ public class LukujenKeskiarvo {
     // toteuta tähän uudelleen aiemmin tekemäsi summametodi
     public static int summa(int luku1, int luku2, int luku3, int luku4) {
         // kirjoita koodia tähän
-        return 0;
+        return luku1+luku2+luku3+luku4;
     }
 
     public static double keskiarvo(int luku1, int luku2, int luku3, int luku4) {
-        return -1;
+        int sum = summa(luku1, luku2, luku3, luku4);
+
+        return (double) sum/4;
     }
 
     public static void main(String[] args) {
