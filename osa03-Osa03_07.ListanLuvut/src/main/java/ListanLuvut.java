@@ -16,6 +16,8 @@ public class ListanLuvut {
 
             luvut.add(luku);
         }
-
+        for (int i = 0; i < luvut.size(); i++){
+            System.out.println(luvut.get(i));
+        }
     }
 }

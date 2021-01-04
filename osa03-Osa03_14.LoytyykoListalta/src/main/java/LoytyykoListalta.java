@@ -16,6 +16,13 @@ public class LoytyykoListalta {
 
             lista.add(luettu);
         }
+        System.out.println("Ketä etsitään?");
+        String input = lukija.nextLine();
 
+        if (lista.contains(input)){
+            System.out.println(input+" löytyi!");
+        } else {
+            System.out.println(input+" ei löytynyt!");
+        }
     }
 }

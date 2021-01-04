@@ -17,6 +17,6 @@ public class KolmannenArvonTulostaminen {
             lista.add(luettu);
         }
 
-        System.out.println(lista.get(0));
+        System.out.println(lista.get(2));
     }
 }

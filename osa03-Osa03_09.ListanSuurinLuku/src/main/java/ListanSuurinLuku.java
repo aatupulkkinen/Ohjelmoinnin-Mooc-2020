@@ -19,6 +19,14 @@ public class ListanSuurinLuku {
         
         System.out.println("");
 
-        // toteuta listan suurimman luvun selvittäminen tänne
+        int largest = lista.get(0);
+
+        for (int i = 0; i < lista.size(); i++){
+            if(largest < lista.get(i)){
+                largest = lista.get(i);
+            }
+        }
+
+        System.out.println("Listan suurin luku: "+largest);
     }
 }

@@ -16,6 +16,14 @@ public class LuvutRajatullaAlueella {
 
             luvut.add(luku);
         }
-
+        System.out.println("Mistä?");
+        int start = Integer.valueOf(lukija.nextLine());
+        System.out.println("Mihin?");
+        int stop = Integer.valueOf(lukija.nextLine());
+        
+        while(start <= stop){
+            System.out.println(luvut.get(start));
+            start++;
+        }
     }
 }

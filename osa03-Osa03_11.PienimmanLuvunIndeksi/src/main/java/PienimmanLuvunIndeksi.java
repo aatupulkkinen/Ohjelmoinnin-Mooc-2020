@@ -7,12 +7,29 @@ public class PienimmanLuvunIndeksi {
     public static void main(String[] args) {
         Scanner lukija = new Scanner(System.in);
 
-        // toteuta tänne ohjelma, joka lukee käyttäjältä lukuja
-        // kunnes käyttäjä syöttää luvun 9999
-        
-        // tämän jälkeen ohjelma tulostaa pienimmän luvun
-        // sekä sen indeksin -- pienin luku voi esiintyä
-        // useammassa indeksissä
-        
+        ArrayList<Integer> nums = new ArrayList<>();
+
+        while(true){
+            int usrInput = Integer.valueOf(lukija.nextLine());
+             
+
+             if(usrInput == 9999){
+                 break;
+             }
+             nums.add(usrInput);
+        }
+        int smallest = nums.get(0);
+
+        for (int i = 0; i < nums.size(); i++) {
+            if (nums.get(i) < smallest){
+                smallest = nums.get(i);
+            }
+        }
+        System.out.println("Pienin luku on "+smallest);
+        for (int i = 0; i < nums.size(); i++) {
+            if (nums.get(i) == smallest){
+                System.out.println("Pienin luku löytyy indeksistä "+i);
+            }
+        }
     }
 }

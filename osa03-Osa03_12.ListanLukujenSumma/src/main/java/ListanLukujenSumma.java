@@ -16,9 +16,11 @@ public class ListanLukujenSumma {
 
             lista.add(luettu);
         }
-
-        System.out.println("");
-
-        // toteuta listan lukujen summan laskeminen tänne
+        int sum = 0;
+        for (int num: lista) {
+            sum += num;
+        }
+        System.out.println("Summa: "+sum);
+            // toteuta listan lukujen summan laskeminen tänne
     }
 }

@@ -19,5 +19,6 @@ public class IoobVirheOhjelma {
             System.out.println(line);
         }
 
+        System.out.println(lines.get(6));
     }
 }

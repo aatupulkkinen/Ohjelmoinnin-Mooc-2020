@@ -17,6 +17,6 @@ public class ToisenJaKolmannenSumma {
             luvut.add(luku);
         }
 
-        System.out.println(luvut.get(0));
+        System.out.println(luvut.get(1)+luvut.get(2));
     }
 }

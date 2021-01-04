@@ -16,9 +16,16 @@ public class KysytynLuvunIndeksi {
 
             lista.add(luettu);
         }
+        
+        System.out.println("Mitä etsitään?");
 
-        System.out.println("");
+        int target = Integer.valueOf(lukija.nextLine());
 
+        for (int i = 0; i < lista.size(); i++){
+            if (lista.get(i) == target){
+                System.out.println("Luku "+target+" on indeksissä "+i);
+            }
+        }
         // toteuta tänne toiminnallisuus luvun etsimiseen
     }
 }

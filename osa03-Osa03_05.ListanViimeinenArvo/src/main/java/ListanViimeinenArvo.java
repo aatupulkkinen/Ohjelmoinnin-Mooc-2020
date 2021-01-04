@@ -16,6 +16,6 @@ public class ListanViimeinenArvo {
 
             lista.add(luettu);
         }
-
+        System.out.println(lista.get(lista.size() - 1));
     }
 }
