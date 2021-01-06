@@ -7,6 +7,9 @@ public class TulostusKolmesti {
         Scanner lukija = new Scanner(System.in);
 
         // Toteuta ohjelmasi tähän.
-
+        System.out.println("Mikä tulostetaan?");
+        String print = lukija.nextLine();
+        print += print + print;
+        System.out.println(print);
     }
 }

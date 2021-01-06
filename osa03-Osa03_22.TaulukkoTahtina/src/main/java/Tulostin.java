@@ -9,6 +9,12 @@ public class Tulostin {
 
     public static void tulostaTaulukkoTahtina(int[] taulukko) {
         // Kirjoita tulostuskoodi tänne
+        for (int starsAmount: taulukko){
+            for (int i =1; i <= starsAmount; i++){
+                System.out.print("*");
+            }
+            System.out.println("");
+        }
     }
 
 }

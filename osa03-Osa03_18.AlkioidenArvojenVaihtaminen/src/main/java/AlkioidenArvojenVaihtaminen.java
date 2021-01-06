@@ -17,8 +17,13 @@ public class AlkioidenArvojenVaihtaminen {
             System.out.println(taulukko[indeksi]);
             indeksi++;
         }
-        System.out.println("");
+        System.out.println("Mitkä arvot vaihdetaan?");
+        int index1 = Integer.valueOf(lukija.nextLine());
+        int index2 = Integer.valueOf(lukija.nextLine());
 
+        int storage = taulukko[index1];
+        taulukko[index1] = taulukko[index2];
+        taulukko[index2] = storage;
         // Toteuta indeksien kysyminen ja vaihto tänne
 
         System.out.println("");

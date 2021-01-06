@@ -1,5 +1,4 @@
 
-
 import java.util.Scanner;
 
 public class EtsitynAlkionIndeksi {
@@ -18,8 +17,18 @@ public class EtsitynAlkionIndeksi {
 
         System.out.print("Mitä etsitään? ");
         int etsittava = Integer.valueOf(lukija.nextLine());
+        boolean found = false;
 
-        // Toteuta etsimistoiminnallisuus tänne
+        for (int i = 0; i < taulukko.length; i++) {
+
+
+            if (taulukko[i] == etsittava) {
+                System.out.println("Luku " + etsittava + " löytyy indeksistä " + i +".");
+                found = true;
+            }
+        }
+        if (!found) {
+            System.out.println("Lukua " + etsittava + " ei löydy.");
+        }
     }
-
 }

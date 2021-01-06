@@ -9,6 +9,11 @@ public class Summaaja {
 
     public static int laskeTaulukonLukujenSumma(int[] taulukko) {
         // Kirjoita koodia tänne
-        return 0;
+        int sum = 0;
+
+        for (int num: taulukko){
+            sum += num;
+        }
+        return sum;
     }
 }
